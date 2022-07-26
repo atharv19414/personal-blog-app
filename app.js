@@ -14,7 +14,8 @@ const contactContent =
 const app = express();
 
 async function connect() {
-    await mongoose.connect('mongodb+srv://admin-atharv:Atharv12345@personalblog.nibjk.mongodb.net/blogDB');
+    // await mongoose.connect('mongodb+srv://admin-atharv:Atharv12345@personalblog.nibjk.mongodb.net/blogDB');
+    await mongoose.connect('mongodb+srv://admin-atharv:Atharv12345@personalblog.nibjk.mongodb.net/?retryWrites=true&w=majority')
 }
 
 connect();
